@@ -1,7 +1,7 @@
 {
   "name": "videogames-app",
   "version": "1.0.0",
-  "description": "Node.js + MongoDB Video Game Library (CS assignment)",
+  "description": "Node.js + MongoDB Video Game Library (Modern Web)",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
