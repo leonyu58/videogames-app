@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Query Games</title></head>
+<body>
+  <h1>Query Video Games</h1>
+  <a href="/list">← Back to List</a>
+
+  <form id="queryForm">
+    <label>Max Price: <input type="number" id="maxPrice" step="0.01" value="60"></label><br>
+    <label>Genre: <input type="text" id="genre" placeholder="e.g. Action"></label><br>
+    <button type="button" onclick="performQuery()">Search</button>
+  </form>
+
+  <h2>Results</h2>
+  <div id="results"></div>
+
+  <script src="/js/query.js"></script>
+</body>
+</html>

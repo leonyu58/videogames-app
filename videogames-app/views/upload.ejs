@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Upload New Game</title></head>
+<body>
+  <h1>Add New Video Game</h1>
+  <form action="/game" method="POST">
+    <label>Title: <input type="text" name="title" required></label><br>
+    <label>Studio: <input type="text" name="studio" required></label><br>
+    <label>Genre: <input type="text" name="genre" required></label><br>
+    <label>Price: <input type="number" name="price" step="0.01" required></label><br>
+    <label>Release Date: <input type="date" name="releaseDate" required></label><br>
+    <button type="submit">Add Game</button>
+  </form>
+  <a href="/list">← Back to List</a>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>All Games</title></head>
+<body>
+  <h1>All Video Games</h1>
+  <a href="/upload">+ Add New Game</a> | <a href="/query">Query Games</a>
+  <table border="1">
+    <tr><th>Title</th><th>Studio</th><th>Genre</th><th>Price</th><th>Release Date</th></tr>
+    <% games.forEach(game => { %>
+      <tr>
+        <td><%= game.title %></td>
+        <td><%= game.studio %></td>
+        <td><%= game.genre %></td>
+        <td>$<%= game.price %></td>
+        <td><%= game.releaseDate.toISOString().split('T')[0] %></td>
+      </tr>
+    <% }) %>
+  </table>
+</body>
+</html>

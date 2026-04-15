@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  mongo:
+    image: mongo:7
+    container_name: videogames-mongo
+    restart: always
+    volumes:
+      - mongo-data:/data/db
+
+  app:
+    build: .
+    container_name: videogames-app
+    restart: always
+    ports:
+      - "20822:3000"       
+    environment:
+      MONGODB_URI: mongodb://mongo:27017/videogamesdb
+    depends_on:
+      - mongo
+
+volumes:
+  mongo-data:
